@@ -1,1 +1,17 @@
-Mi aprendizaje en python
+
+# Calificaciones dependendiendo de las notas. Si no esta en el rango, error.
+calif = input('Introducir puntaje entre 0.0 al 1.0 ')
+
+try:
+    if  1.0 >= calif >= 0.9  :
+        print('Sobresaliente')
+    elif calif >= 0.8 :
+       print('Notable')
+    elif calif >= 0.7 :
+        print('Bien')
+    elif calif >= 0.6 :
+        print('Suficiente')
+    elif 0.6 > calif >= 0.0 :
+        print('Insuficiente')
+except:
+    print('Puntuacion incorrecta')
