@@ -1,0 +1,12 @@
+#Convertir edad de perros a edad de humanos
+
+eperro = input('Que edad tiene el perro (en años)?')
+
+#Sacar logaritmo
+from math import log
+
+#La formula 16*Ln (edad del perro) +31
+ehumano = (16 * log(int(eperro))) + 31
+
+# Round es la forma de redondear el numero, lo despues de la coma es la cantidad de decimales
+print(round(ehumano,2))
